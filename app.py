@@ -7,6 +7,7 @@
 # print(f"converstion of kilometer into miles is " ,convert_km_distance_into_miles)
 from ast import And
 from audioop import mul
+from cgi import print_form
 from re import A
 
 # age =18
@@ -113,7 +114,11 @@ from re import A
 # #tuple cant be modified
 
 # list_of_dict = {"jungle":"forest","lion":"wild","cat":"wild"}
-# list_of_dict.pop("cat")
+# # list_of_dict.pop("cat")
+
+# for value in list_of_dict:
+#     print(list_of_dict[value])
+
 # print(list_of_dict)
 
 # # list_of_dict[0] this is not allowed in dict as it doesnt follow indices
@@ -123,10 +128,47 @@ from re import A
 # print(string_slash)
 
 
-input = "talk is cheap.show me the code"
-print("1",input[3])
-print("1",input[-3])
-print("3",input.replace("code","program"))
+# input = "talk is cheap.show me the code"
+# print("1",input[3])
+# print("1",input[-3])
+# print("3",input.replace("code","program"))
+
 
 #  print("total_marks",total_marks)
 #  print("average_marks",average_total_marks)
+
+
+# numbers = [1,2,3,4,5,6]
+# sum = 0
+# mul =1
+# for value in numbers:
+#     mul *= value
+#     sum += value
+# print(value)
+# print(sum)
+# print(mul)
+# print(f"the sum of numbers is{sum}")
+
+#arbitrary arguments\
+
+# def greet(*names):
+#     for name  in  names:
+#         print("hello",name)
+        
+# greet("rv","raj","awanish","mohit")
+
+#factorial
+def factorial(x):
+    if x ==1:
+        return 1
+    if x ==0:
+        return 1
+    else:
+        return (x*factorial(x-1))
+x =5
+print(f"the factorial of {x} is {factorial(x)} ")
+
+
+        
+
+
